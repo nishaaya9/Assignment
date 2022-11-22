@@ -1,7 +1,10 @@
 #include<stdio.h>
 int main()
 {
+     
+        
     int day;
+    
         printf("\n1.Monday");
         printf("\n2.Tuesday");
         printf("\n3.Wednesday");
@@ -9,8 +12,11 @@ int main()
         printf("\n5.Friday");
         printf("\n6.Saturday");
         printf("\n7.Sunday");
-        printf("\nEnter a day:");
+        while (day!=8)
+        {
+        printf("\nEnter your choice:");
         scanf("%d",&day);
+       
         switch(day)
         {
             case 1:
@@ -34,8 +40,12 @@ int main()
             case 7:
                 printf("Sunday");
                 break;
+            case 8:
+                printf("Exit");
+                break;    
             default :
-                printf("Invalid Input");
+                printf("invalid number");
+        }
         }
     return 0;
 }

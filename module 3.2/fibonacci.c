@@ -1,11 +1,16 @@
 # include<stdio.h>
 int main()
 {
-    int num,i,f=0;
-    printf("enter value : ");
-    scanf("%d",&num);
-    for ( i = 0; i <=num; i++);
+    int n,a=0,b=1,c;
+    printf("enter the number of terms : ");
+    scanf("%d",&n);
+    for (int i = 1; i<=n; i++)
+    {
+        printf("%d ",a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
     
-        
     return 0;
 }

@@ -1,44 +1,51 @@
 #include<stdio.h>
 int main()
 {
-    char ch;
-    printf("Enter any alphabet: ");
-    scanf("%c", &ch);
-    switch(ch)
+    char alphabet;
+    while(alphabet!='1')
+    {
+    printf("Enter the alphabet: ");
+    scanf("%c",&alphabet);
+    //alphabet = getc(stdin);
+    switch(alphabet)
     {
         case 'a': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'e': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'i': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'o': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'u': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'A': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'E': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
-        case 'I': 
-            printf("Vowel");
+        case 'I':
+            printf("Vowel\n");
             break;
         case 'O': 
-            printf("Vowel");
+            printf("Vowel\n");
             break;
         case 'U': 
-            printf("Vowel");
+            printf("Vowel\n");
+            break;
+        case '1':
+            printf("Exit\n");
             break;
         default: 
-            printf("Consonant");
+            printf("Consonant\n");
+            break;
     }
-
+    }
     return 0;
 }

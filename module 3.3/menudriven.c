@@ -8,10 +8,12 @@ int main()
     
     int i,choice,num1,num2,add,sub,mul;
     float div;
-    
+    while (choice!=5)
+    {
+          
     printf("Enter your choice : ");
     scanf("%d",&choice);
-    
+    }
     printf("enter num1 and num2 : ");
     scanf("%d %d",&num1,&num2);
 
@@ -41,6 +43,7 @@ int main()
         printf("invalid number");
         break;
     }
+    
     
   return 0;
 }
