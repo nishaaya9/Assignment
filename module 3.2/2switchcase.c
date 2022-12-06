@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    char alphabet;
-    do
+    char alphabet='1';
+    while ((strcmp(alphabet, 'm') != 0))
     {
         printf("Enter the alphabet: ");
-        scanf("%c", &alphabet);
+        scanf("%s", &alphabet);
+
         switch (alphabet)
         {
         case 'a':
@@ -68,6 +70,7 @@ int main()
             printf("Consonant\n");
             break;
         }
-    } while (alphabet != '1');
+    }
+
     return 0;
 }
