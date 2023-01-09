@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
-#include <string>
+#include <string.h>
 using namespace std;
 class event
 {
@@ -22,7 +22,7 @@ public:
         cin >> e_name;
         cout << "Enter the customer's first and last name " << endl;
         // cin >> c_name;
-        getline(cin, c_name);
+        getline(cin >> ws, c_name);
         cout << "Enter the number of guests" << endl;
         cin >> guest;
         cout << "Enter the number of minutes in the event" << endl;
