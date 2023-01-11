@@ -8,7 +8,10 @@ int main()
     printf("enter value of b = ");
     scanf("%d",&b);
     printf("after swap : \n");
-    printf("a = %d\n",b);
-    printf("b = %d",a);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("a = %d\n",a);
+    printf("b = %d",b);
     return 0;
 }
